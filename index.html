@@ -1,531 +1,747 @@
 <!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Dieu Minh Vo - Personal Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Minh Vo — Data Scientist</title>
+  <meta name="description" content="Portfolio of Minh Vo, Data Scientist — M.S. Applied Data Science, University of Chicago." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/Profile-Pic.jpg" alt="" /></a>
-					<h1 id="logo"><strong>Minh Vo</strong> </h1>
-					<p>A data enthusiast <br />
-					Attempting to leverage data-driven insights <br />
-					to make people's work easier</p>
-				</div>
-			</header>
+    :root {
+      --bg:          #F5F5CC;
+      --navy:        #12156A;
+      --olive:       #5C5C22;
+      --olive-light: #8A8A3A;
+      --card-bg:     #ffffff;
+      --section-alt: #f0f0c0;
+      --text-body:   #2a2a50;
+    }
 
-		<!-- Main -->
-			<div id="main">
+    html { scroll-behavior: smooth; }
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2> <strong> About Me </strong> <br /></h2>
-							<p> M.S. Applied Data Science at The University of Chicago </p>
-						</header>
-						<p> Hello! <br />
-							My name is Minh. You can call me Claire. 
-							<br />
-							I am originally from Vietnam. I got my Bachelor's in Business Analytics from the University of South Florida. 
-							During my undergraduate studies, I did three internships in business intelligence, sales operations, and data analytics, 
-							which strongly helped me with my data analytics, dashboarding, and storytelling skills when I got to work on huge datasets 
-							as well as build dashboards using SQL, Python, and Tableau to generate valuable insights and present them to 
-							the business stakeholders, helping them improve their business outcomes. <br />
-							<br />
-							Those internships were pivotal in shaping my understanding of the role of data across various industries. 
-							This realization propelled me toward pursuing a Master's degree in Data Science at the University of Chicago. 
-							Here, I delved deeper into data science and machine learning, exploring various analytical methodologies to tackle complex problems in 
-							interdisciplinary areas.  <br />
-							<br />
-							As a self-motivated individual, I am always eager to learn new things. My passion is to harness the power of data-driven insights 
-							for informed decision-making, optimizing processes, and uncovering new opportunities for businesses and organizations. 
-							I am excited about the journey ahead and the possibilities that lie in the intersection of data, technology, and business.</p>
-					</section>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background: var(--bg);
+      color: var(--navy);
+      overflow-x: hidden;
+    }
 
-				<!-- Two -->
-					<section id="two">
-						<h2> <strong> Projects </strong> </h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/DEPA.jpg" class="image fit thumb"><img src="images/thumbs/DEPA.jpg" alt /></a>
-								<h3>Divvy - Chicago's Bike Sharing Systems Analysis </h3>
-								<p>Developed ETL pipeline to enable the analysis of Divvy's ridership regarding rider behaviors, stations' location, etc.,
-								   and identify external factors (e.g. weather conditions, days of the week) that impact their ridership.</p>
-								<ul class="icons">
-									<li>
-										<a href="https://github.com/minhdvo1703/Divvy-Bike-Data-Engineering-Project/blob/main/team4-FinalPresentation.pdf" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/Divvy-Bike-Data-Engineering-Project" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-									</a>
-									</li>
-								</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/BDP.jpg" class="image fit thumb"><img src="images/thumbs/BDP.jpg" alt="" /></a>
-								<h3>Tweets Identity in Education Analysis</h3>
-								<p>Performed analysis on 100 million (500GB) of Twitter data using PySpark to discover the influential Twitterers in education, 
-									hot topics in education on Twitter by geography and timeline and identify the uniqueness or duplication patterns 
-									in education-related tweets. </p>
-								<ul class="icons">
-									<li>
-										<a href="https://bit.ly/bdp-twitter-edu" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/twitterer-edu" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-									</a>
-									</li>
-								</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/TS.jpg" class="image fit thumb"><img src="images/thumbs/TS.jpg" alt="" /></a>
-								<h3>Time Series Analysis for Chicago’s Trade Forecast </h3>
-								<p>Built different time series models to identify the best one forecasting monthly import trends in Chicago before and after COVID-19 
-									in the period of 01/2002 – 12/2023, enabling businesses and policymakers to make informed decisions, optimize operations,
-									and drive economic growth.</p>
-								<ul class="icons">
-									<li>
-										<a href="https://github.com/minhdvo1703/timeseries_chicago_trade/blob/main/0.TimeSeriesforChicagoTradeData.pdf" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/timeseries_chicago_trade" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-									</a>
-									</li>
-								</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/HAR.jpg" class="image fit thumb"><img src="images/thumbs/HAR.jpg" alt="" /></a>
-								<h3> Human Activity Recognition using Smartphone Data  </h3>
-								<p>Explored and developed various deep learning models that can classify six typical human activities 
-								   using data generated from smartphone sensors.</p>
-								   <ul class="icons">
-									<li>
-										<a href="https://github.com/minhdvo1703/Human-Activity-Recognition/blob/main/Minh%20Vo%20-%20ML%20Final%20Project.pdf" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/Human-Activity-Recognition/blob/main/Minh_Vo_ML_Final_Project.ipynb" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-									</a>
-									</li>
-									</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/NLP.jpg" class="image fit thumb"><img src="images/thumbs/NLP.jpg" alt="" /></a>
-								<h3> Navigating AI Revolution: Analysis of Industry Impact and Future Workforce </h3>
-								<p> Led a comprehensive NLP project analyzing a 200K news article corpus to identify the impact 
-									of AI in various industries, utilizing advanced techniques like BERTopic, K-Train, Sentiment Analysis, etc., 
-									to reveal significant shifts toward automation and provide strategic recommendations for leveraging 
-									conversational AI and LLMs to enhance people's productivity and engagement.</p>
-								<ul class="icons">
-									<li>
-										<a href="https://github.com/minhdvo1703/GenAI-Impact-Workforce/blob/main/MinhVo-Final-Presentation.pdf" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/GenAI-Impact-Workforce" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-										</a>
-									</li>
-								</ul>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/DSHC.jpg" class="image fit thumb"><img src="images/thumbs/DSHC.jpg" alt="" /></a>
-								<h3>Health Insurance Claim Prediction</h3>
-								<p>Developed and fine-tuned predictive models to estimate insurance claim amounts based on 
-								health factors such as BMI, diabetes, smoking status, etc., and identified the best model that achieved
-								superior accuracy over existing methods and significantly providing actionable insights for decision-making 
-								process in healthcare risk assessment. </p>
-								<ul class="icons">
-									<li>
-										<a href="https://github.com/minhdvo1703/Insurance-Claim-Amount-Prediction/blob/main/DSHC-Final-Presentation.pdf" class="icon brands fa-file-powerpoint-o"
-										:before
-										<span class="label"> Presentation </span>
-										</a>
-									</li>
-									<li> 
-										<a href="https://github.com/minhdvo1703/Insurance-Claim-Amount-Prediction" class="icon fa-code-fork"
-										:before
-										<span class="label"> Repo </span>
-									</a>
-									</li>
-								</ul>
-							</article>
-						</div>
-					</section>
+    /* ─── NAVBAR ───────────────────────────────────────── */
+    nav {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 100;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 5rem;
+    }
 
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
+    .nav-logo {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
 
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+    .nav-links a {
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--navy);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 0.55; }
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
+    .nav-socials {
+      display: flex;
+      gap: 1.1rem;
+      align-items: center;
+    }
+    .nav-socials a {
+      color: var(--navy);
+      font-size: 1.05rem;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .nav-socials a:hover { opacity: 0.55; }
 
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+    /* ─── HERO ─────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 5rem;
+      padding-top: 4rem;
+    }
 
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
+    .hero-inner {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
 
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
+    .hero-text { flex: 1 1 0; }
 
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
+    .hero-greeting {
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 0.2rem;
+    }
 
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
+    .hero-title {
+      font-size: clamp(3.8rem, 8vw, 7rem);
+      font-weight: 800;
+      line-height: 0.95;
+      color: var(--navy);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.7rem;
+    }
 
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
+    .hero-location {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 2.5rem;
+    }
 
-					</section>
-				-->
+    .btn-resume {
+      display: inline-block;
+      padding: 0.72rem 2.2rem;
+      border: 2px solid var(--navy);
+      background: var(--bg);
+      color: var(--navy);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-resume:hover {
+      background: var(--navy);
+      color: var(--bg);
+    }
 
-			</div>
+    /* Photo composition */
+    .hero-photo-wrap {
+      position: relative;
+      flex: 0 0 auto;
+      width: 400px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/minhvo-0317/" class="icon brands fa-linkedin"><span class="label">LinkedIN</span></a></li>
-						<li><a href="https://github.com/minhdvo1703" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:minhdvo0317@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Minh Vo. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+    .hero-photo-ring {
+      position: absolute;
+      width: 375px;
+      height: 375px;
+      border-radius: 50%;
+      border: 1.5px solid var(--olive);
+      top: 50%;
+      left: 50%;
+      transform: translate(-47%, -53%);
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .hero-photo {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      position: relative;
+      z-index: 1;
+      display: block;
+    }
 
-	</body>
+    /* Decorative plus marks */
+    .deco-plus {
+      position: absolute;
+      z-index: 2;
+      color: var(--olive);
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 1;
+      user-select: none;
+    }
+    .deco-plus-1 { top:  -4px; right: 14px; }
+    .deco-plus-2 { top:  22px; right: -8px; }
+
+    /* Decorative slash marks */
+    .deco-slashes {
+      position: absolute;
+      bottom: 38px;
+      left: -10px;
+      z-index: 2;
+      display: flex;
+      gap: 5px;
+      user-select: none;
+    }
+    .deco-slashes span {
+      display: block;
+      width: 2px;
+      height: 22px;
+      background: var(--olive);
+      transform: rotate(20deg);
+    }
+
+    /* ─── SECTION SHARED ───────────────────────────────── */
+    .section {
+      padding: 5.5rem 5rem;
+    }
+    .section-alt {
+      background: var(--section-alt);
+    }
+
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--olive-light);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-heading {
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 2.5rem;
+      line-height: 1.1;
+    }
+
+    /* ─── ABOUT ────────────────────────────────────────── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      font-size: 0.97rem;
+      line-height: 1.85;
+      color: var(--text-body);
+      margin-bottom: 1.1rem;
+    }
+
+    .skills-group { margin-bottom: 1.4rem; }
+
+    .skills-group h3 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--olive-light);
+      margin-bottom: 0.6rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+
+    .skill-tag {
+      background: var(--navy);
+      color: var(--bg);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 2px;
+      letter-spacing: 0.02em;
+    }
+
+    /* ─── PROJECTS ─────────────────────────────────────── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(18, 21, 106, 0.1);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(18, 21, 106, 0.13);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 155px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-body {
+      padding: 1.2rem 1.25rem 1.4rem;
+    }
+
+    .project-body h3 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.45;
+      margin-bottom: 0.55rem;
+    }
+
+    .project-body p {
+      font-size: 0.8rem;
+      line-height: 1.65;
+      color: var(--text-body);
+      margin-bottom: 1rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .project-link {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+      border: 1.5px solid var(--navy);
+      padding: 0.22rem 0.65rem;
+      letter-spacing: 0.02em;
+      transition: background 0.18s, color 0.18s;
+    }
+    .project-link:hover {
+      background: var(--navy);
+      color: var(--bg);
+    }
+    .project-link i { margin-right: 0.3em; }
+
+    /* ─── RESUME ───────────────────────────────────────── */
+    .resume-lead {
+      font-size: 0.97rem;
+      line-height: 1.8;
+      color: var(--text-body);
+      max-width: 640px;
+      margin-bottom: 2.5rem;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.8rem;
+      max-width: 760px;
+    }
+
+    .resume-block h3 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--olive-light);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1.5px solid var(--navy);
+    }
+
+    .resume-item { margin-bottom: 1.3rem; }
+
+    .resume-item .role {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .resume-item .org {
+      font-size: 0.84rem;
+      color: var(--text-body);
+    }
+    .resume-item .period {
+      font-size: 0.76rem;
+      color: var(--olive-light);
+      margin-top: 0.1rem;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.82rem 2.2rem;
+      background: var(--navy);
+      color: var(--bg);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-download:hover { opacity: 0.82; }
+
+    /* ─── FOOTER ───────────────────────────────────────── */
+    footer {
+      background: var(--navy);
+      color: var(--bg);
+      padding: 2.2rem 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-copy {
+      font-size: 0.82rem;
+      opacity: 0.65;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1.2rem;
+    }
+    .footer-socials a {
+      color: var(--bg);
+      font-size: 1rem;
+      text-decoration: none;
+      opacity: 0.65;
+      transition: opacity 0.2s;
+    }
+    .footer-socials a:hover { opacity: 1; }
+
+    /* ─── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 1024px) {
+      nav        { padding: 1.1rem 3rem; }
+      #hero      { padding: 5rem 3rem 2rem; }
+      .section   { padding: 4.5rem 3rem; }
+      footer     { padding: 2rem 3rem; }
+
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 820px) {
+      nav { padding: 1rem 2rem; }
+
+      #hero { padding: 5rem 2rem 2rem; }
+
+      .hero-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-photo-wrap { width: 260px; height: 260px; }
+      .hero-photo      { width: 240px; height: 240px; }
+      .hero-photo-ring { width: 252px; height: 252px; }
+
+      .section     { padding: 4rem 2rem; }
+      .about-grid  { grid-template-columns: 1fr; gap: 2.5rem; }
+      .resume-grid { grid-template-columns: 1fr; }
+      footer       { flex-direction: column; gap: 1rem; padding: 2rem; }
+    }
+
+    @media (max-width: 600px) {
+      .nav-links         { display: none; }
+      .projects-grid     { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════ NAV ══════════════════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">Minh Vo</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+  <div class="nav-socials">
+    <a href="https://www.linkedin.com/in/minhvo-0317/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/minhdvo1703" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, I'm Minh,</p>
+      <h1 class="hero-title">Data<br>Scientist</h1>
+      <p class="hero-location">based in Chicago.</p>
+      <a href="#resume" class="btn-resume">Resume</a>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <!-- decorative plus marks (top-right of photo) -->
+      <span class="deco-plus deco-plus-1">+</span>
+      <span class="deco-plus deco-plus-2">+</span>
+
+      <!-- offset ring -->
+      <div class="hero-photo-ring"></div>
+
+      <!-- profile photo -->
+      <img src="images/Profile-Pic.jpg" alt="Minh Vo" class="hero-photo">
+
+      <!-- decorative slashes (bottom-left of photo) -->
+      <div class="deco-slashes">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ ABOUT ═════════════════════════ -->
+<section id="about" class="section section-alt">
+  <p class="section-eyebrow">Who I am</p>
+  <h2 class="section-heading">About Me</h2>
+
+  <div class="about-grid">
+
+    <div class="about-text">
+      <p>Hello! My name is Minh — you can also call me Claire.</p>
+      <p>Originally from Vietnam, I earned my Bachelor's in Business Analytics from the University of South Florida. During my undergraduate studies, I completed three internships in business intelligence, sales operations, and data analytics, sharpening my skills in SQL, Python, and Tableau to turn large datasets into business insights.</p>
+      <p>Those experiences revealed how transformative data can be across industries, which drove me to pursue a Master's in Applied Data Science at the University of Chicago. There I deepened my expertise in machine learning, deep learning, and scalable data engineering to tackle complex, interdisciplinary problems.</p>
+      <p>My passion is to harness data-driven insights for informed decision-making — optimizing processes, uncovering opportunities, and bridging the gap between data, technology, and business impact.</p>
+    </div>
+
+    <div class="about-skills">
+      <div class="skills-group">
+        <h3>Languages &amp; Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">PySpark</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Machine Learning</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">TensorFlow / Keras</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">BERTopic / NLP</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">Time Series</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Data Engineering</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">ETL Pipelines</span>
+          <span class="skill-tag">Apache Spark</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Airflow</span>
+          <span class="skill-tag">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ PROJECTS ══════════════════════ -->
+<section id="projects" class="section">
+  <p class="section-eyebrow">What I've built</p>
+  <h2 class="section-heading">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="images/thumbs/DEPA.jpg" alt="Divvy Bike Sharing Analysis" class="project-img">
+      <div class="project-body">
+        <h3>Divvy — Chicago's Bike Sharing Systems Analysis</h3>
+        <p>Built an ETL pipeline to analyze Divvy ridership, station usage, and external factors (weather, day-of-week) driving ridership patterns.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/Divvy-Bike-Data-Engineering-Project" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://github.com/minhdvo1703/Divvy-Bike-Data-Engineering-Project/blob/main/team4-FinalPresentation.pdf" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/thumbs/BDP.jpg" alt="Twitter Education Analysis" class="project-img">
+      <div class="project-body">
+        <h3>Tweets Identity in Education Analysis</h3>
+        <p>Analyzed 100 million tweets (500 GB) with PySpark to identify influential educators, trending topics by geography, and duplication patterns.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/twitterer-edu" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://bit.ly/bdp-twitter-edu" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/thumbs/TS.jpg" alt="Chicago Trade Forecast" class="project-img">
+      <div class="project-body">
+        <h3>Time Series Analysis for Chicago's Trade Forecast</h3>
+        <p>Developed time series models forecasting monthly import trends in Chicago (2002–2023), enabling data-driven decisions for businesses and policymakers.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/timeseries_chicago_trade" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://github.com/minhdvo1703/timeseries_chicago_trade/blob/main/0.TimeSeriesforChicagoTradeData.pdf" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/thumbs/HAR.jpg" alt="Human Activity Recognition" class="project-img">
+      <div class="project-body">
+        <h3>Human Activity Recognition using Smartphone Data</h3>
+        <p>Designed deep learning models to classify six human activities from smartphone sensor signals with high classification accuracy.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/Human-Activity-Recognition/blob/main/Minh_Vo_ML_Final_Project.ipynb" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://github.com/minhdvo1703/Human-Activity-Recognition/blob/main/Minh%20Vo%20-%20ML%20Final%20Project.pdf" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/thumbs/NLP.jpg" alt="AI Impact NLP Analysis" class="project-img">
+      <div class="project-body">
+        <h3>Navigating AI Revolution: Industry Impact &amp; Future Workforce</h3>
+        <p>Applied BERTopic, K-Train, and sentiment analysis to 200K news articles to map AI's impact on industries and future workforce trends.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/GenAI-Impact-Workforce" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://github.com/minhdvo1703/GenAI-Impact-Workforce/blob/main/MinhVo-Final-Presentation.pdf" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="images/thumbs/DSHC.jpg" alt="Health Insurance Claim Prediction" class="project-img">
+      <div class="project-body">
+        <h3>Health Insurance Claim Prediction</h3>
+        <p>Built and fine-tuned predictive models estimating claim amounts from health factors (BMI, diabetes, smoking), improving healthcare risk assessment.</p>
+        <div class="project-links">
+          <a href="https://github.com/minhdvo1703/Insurance-Claim-Amount-Prediction" target="_blank" rel="noopener" class="project-link">
+            <i class="fab fa-github"></i>Repo
+          </a>
+          <a href="https://github.com/minhdvo1703/Insurance-Claim-Amount-Prediction/blob/main/DSHC-Final-Presentation.pdf" target="_blank" rel="noopener" class="project-link">
+            <i class="fas fa-file-alt"></i>Slides
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ RESUME ═════════════════════════ -->
+<section id="resume" class="section section-alt">
+  <p class="section-eyebrow">Background</p>
+  <h2 class="section-heading">Resume</h2>
+
+  <p class="resume-lead">
+    M.S. Applied Data Science at the University of Chicago. Experienced across the full data science lifecycle — from ETL pipelines and exploratory analysis to machine learning, deep learning, and stakeholder storytelling.
+  </p>
+
+  <div class="resume-grid">
+
+    <div class="resume-block">
+      <h3>Education</h3>
+      <div class="resume-item">
+        <div class="role">M.S. Applied Data Science</div>
+        <div class="org">University of Chicago</div>
+        <div class="period">2023 – 2025</div>
+      </div>
+      <div class="resume-item">
+        <div class="role">B.S. Business Analytics</div>
+        <div class="org">University of South Florida</div>
+        <div class="period">2019 – 2023</div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Experience</h3>
+      <div class="resume-item">
+        <div class="role">Data Analytics Intern</div>
+        <div class="org">Business Intelligence &amp; Sales Operations</div>
+        <div class="period">3 roles · 2020 – 2023</div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="mailto:minhdvo0317@gmail.com" class="btn-download">
+    <i class="fas fa-envelope"></i> Get in Touch
+  </a>
+
+</section>
+
+<!-- ══════════════════════ FOOTER ════════════════════════ -->
+<footer>
+  <span class="footer-copy">&copy; 2025 Minh Vo. All rights reserved.</span>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/minhvo-0317/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/minhdvo1703" target="_blank" rel="noopener" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:minhdvo0317@gmail.com" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</footer>
+
+<script>
+  // Smooth-scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
 </html>
